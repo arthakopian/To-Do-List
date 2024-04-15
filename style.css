@@ -1,0 +1,77 @@
+body{
+    text-align: center;
+    margin: 0;
+    box-sizing: border-box;
+}
+.menu {
+    max-height: 300px;
+    background: #191d58;
+    padding: 30px 150px;
+}
+h1{
+    color: #fff;
+    line-height: 0;
+}
+.my-input{
+    display: flex;
+}
+.title {
+    flex: 1 0 75%;
+    padding: 10px;
+    font-size: 16px;
+    margin: 0;
+    border: none;
+}
+.my-button {
+    flex: 1 0 25%;
+    padding: 10px 30px;
+    font-size: 16px;
+    background: #d6d0d0;
+    cursor: pointer;
+}
+.my-button:hover{
+    content: "";
+    background: #b4aeae;
+}
+.newElement{
+    font-size: 20px;
+    padding: 14px 0;
+    cursor: pointer;
+    position: relative;
+}
+.newElement:nth-child(even){
+    background: #e6e2e2;
+}
+.newElement:nth-child(odd){
+    background: #cfcdcd;
+}
+.newElement:hover{
+    background: #c7c4c4;
+}
+
+.cross{
+    position: absolute;
+    right: 0;
+    top: 0;
+    align-content: center;
+    width: 50px;
+    height: 100%;
+}
+.cross:hover{
+    background: #191d58;
+    color: #FFF;
+}
+.action-done{
+    background: grey !important;
+    color: #fff;
+    text-decoration: line-through;
+}
+.action-done::before{
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 0;
+    align-content: center;
+    width: 50px;
+    height: 100%;
+}
